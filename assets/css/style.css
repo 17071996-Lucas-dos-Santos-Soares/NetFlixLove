@@ -22,6 +22,7 @@ body{
 }
 .logo{
     width: 50px;
+    margin: 0 auto;
 }
 
 .header nav{
