@@ -163,9 +163,6 @@ footer {
         padding-left: 100px;
     }
 
-    .banner{
-        background-position: center center;
-    }
     p.desc{
         width: 120%;
         text-align: center;
@@ -177,15 +174,22 @@ footer {
 }
 
 @media(max-width: 428px){
+    .banner{
+    width: 100%;
+    height: 98vh;
+    position: relative;
+    background-image: url(../imgs/quadro-pintura-atualizado.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 120px 1rem 2rem;
+    }
     .conteudo{
         text-align: center;
         margin-left: 20px;
     }
 
-    .banner{
-        background-image: url(../imgs/quadro-pintura-atualizado.png);
-        background-position:right center;
-    }
     p.desc{
         width: 100%;
         text-align: left;
