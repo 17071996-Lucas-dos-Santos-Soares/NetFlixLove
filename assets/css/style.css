@@ -136,11 +136,12 @@ p.desc{
 
 .swiper-slide{
     width: auto !important;
+    overflow: hidden;
 }
 
 .swiper-slide img{
     display: flex;
-    width: 100px;
+    width: 300px;
     border-radius: 10px;
     object-fit: cover;
     margin: 0 auto;
@@ -162,8 +163,22 @@ footer {
     font-style: italic;
 }
 @media(min-width: 900px){
+    .swiper-slide{
+        width: 100%;
+        padding: 100px;
+        overflow: auto;
+    }
     .swiper-slide img{
         width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 50%;
+        transition: all 0.2s;
+    }
+
+    .swiper-slide img:hover{
+        transition: all 0.2s;
+        border-radius: 30px;
     }
 }
 
