@@ -174,12 +174,16 @@ footer {
         object-fit: cover;
         border-radius: 50%;
         transition: all 0.2s;
+        object-position: 50% 50%;
     }
 
     .swiper-slide img:hover{
-        transition: all 0.2s;
-        border-radius: 30px;
-    }
+    transition: all 0.2s ease-in-out;
+    box-shadow:
+    0 0 10px #FF0055,
+    0 0 25px rgba(255, 0, 85, 0.7),
+    0 0 50px rgba(255, 0, 85, 0.4);
+}
 }
 
 @media(max-width:820px) and(max-height:1180px){
@@ -203,6 +207,8 @@ footer {
     }
     .swiper-slide img{
         width: 300px;
+        height: 300px;
+        border-radius: 50%;
     }
 }
 
@@ -231,7 +237,17 @@ footer {
 
     .swiper-slide img{
         width: 300px;
+        height: 300px;
+        border-radius: 50%;
     }
+
+    .swiper-slide img:hover{
+    transition: all 0.2s ease-in-out;
+    box-shadow:
+    0 0 10px #FF0055,
+    0 0 25px rgba(255, 0, 85, 0.7),
+    0 0 50px rgba(255, 0, 85, 0.4);
+}
     footer p{
         font-size: 16px;
     }
